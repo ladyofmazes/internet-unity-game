@@ -13,7 +13,7 @@ public class Driver : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         float steerBackForth = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
         float steerAmount = Input.GetAxis("Horizontal") * steerSpeed * Time.deltaTime;
